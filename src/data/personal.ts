@@ -17,7 +17,7 @@ export const personalInfo: PersonalInfo = {
     'I build scalable backend systems and intelligent AI applications. Passionate about clean architecture, distributed systems, and turning complex problems into elegant solutions.',
   philosophy:
     'Software engineering is about building systems that work reliably at scale. I approach every problem with first-principles thinking, choosing the right tool for the job and designing for maintainability from day one.',
-  email: 'vb16vishnu@.com',
+  email: 'vb16vishnu@gmail.com',
   location: 'India',
   resumeUrl: 'https://drive.google.com/file/d/1ZQMiyfc893RF9xFvShiJHiZTM239oSK2/view?usp=sharing',
   profileImage: my_pic,

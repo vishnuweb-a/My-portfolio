@@ -44,12 +44,16 @@ export function Contact() {
 
     setStatus({ type: 'loading' });
 
-    // Simulated submission — replace with real API
+    // Open mail client
     setTimeout(() => {
-      setStatus({ type: 'success', message: 'Message sent successfully.' });
+      const subject = encodeURIComponent(`New message from ${form.name}`);
+      const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
+      window.location.href = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
+
+      setStatus({ type: 'success', message: 'Opening mail client...' });
       setForm({ name: '', email: '', message: '' });
       setTimeout(() => setStatus({ type: 'idle' }), 4000);
-    }, 1200);
+    }, 800);
   }
 
   function handleChange(field: keyof FormState, value: string) {
