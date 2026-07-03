@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .playwrite-id {
+    font-family: "Playwrite ID", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
 /* =============================================================================
    FONT FACES
    ============================================================================= */
@@ -69,7 +78,7 @@
   body {
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
-    font-family: 'Geist', 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Black Ops One', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -92,25 +101,32 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: 'Black Ops One', system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  word-spacing: 0.08em;
   color: var(--color-text-primary);
   background-color: var(--color-bg-primary);
   overflow-x: hidden;
 }
 
-/* Headings use display font */
+/* Headings use Playwrite ID cursive font */
 h1, h2, h3 {
-  font-family: var(--font-display);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  font-family: "Playwrite ID", cursive;
+  font-optical-sizing: auto;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
 }
 
 h4, h5, h6 {
-  font-family: var(--font-body);
-  font-weight: 600;
-  line-height: 1.3;
+  font-family: "Playwrite ID", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 /* Links */

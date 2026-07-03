@@ -4,6 +4,7 @@ import { NAV_ITEMS } from '../../constants';
 import { useScrollPosition, useScrollTo } from '../../hooks/useScroll';
 import { Button } from '../ui/Button';
 import { MobileMenu } from './MobileMenu';
+import logo from '../../assets/my_logo - Copy.png';
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -28,18 +29,17 @@ export function Navbar() {
           }
         `}
       >
-        <nav className="container-main h-full flex items-center justify-between" aria-label="Main navigation">
+        <nav className="container-main h-full flex items-center justify-between pt-2 mt-2" aria-label="Main navigation">
           {/* Logo */}
           <a
             href="#"
-            className="font-[var(--font-display)] text-lg tracking-tight text-[var(--color-text-primary)] hover:text-[var(--color-accent)] transition-colors duration-[var(--duration-fast)]"
+            className="flex items-center transition-opacity duration-[var(--duration-fast)] hover:opacity-80"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            style={{ fontFamily: 'var(--font-display)' }}
           >
-            VB
+            <img src={logo} alt="Vishnu Bhardwaj Logo" className="h-14 w-auto object-contain" />
           </a>
 
           {/* Desktop nav */}

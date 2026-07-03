@@ -96,7 +96,7 @@ export function Footer() {
 
           <div className="flex items-center gap-4">
             <p className="text-xs text-[var(--color-text-tertiary)]">
-              Built with React, TypeScript, Tailwind CSS, and Motion.
+              Always building. Always learning. Always shipping.
             </p>
             <button
               onClick={scrollToTop}
